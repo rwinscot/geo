@@ -31,5 +31,5 @@ All we ask is attribution including the supporting libraries used in this
 firmware. 
 
 #### Revision  Description
-1.00      Initial public release.
-1.01      Minor edits for compiling under Arduino 1.0.
+- 1.00      Initial public release.
+- 1.01      Minor edits for compiling under Arduino 1.0.
