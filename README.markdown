@@ -1,6 +1,6 @@
  - Title: Coobro Geo
- - Version: 1.00
- - Date: 11-09-2011
+ - Version: 1.01
+ - Date: 04-28-2012
  - Company: Coobro Labs
  - Website: http://CoobroLabs.com
 
@@ -32,3 +32,4 @@ firmware.
 
 #### Revision  Description
 1.00      Initial public release.
+1.01      Minor edits for compiling under Arduino 1.0.

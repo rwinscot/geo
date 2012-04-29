@@ -1,6 +1,6 @@
 /*******************************************************************************
 * Title: Coobro Geo
-* Version: 1.00
+* Version: 1.01
 * Date: 11-09-2011
 * Company: Coobro Labs
 * Website: http://CoobroLabs.com
@@ -40,23 +40,25 @@
 * Revision  Description
 * ========  ===========
 * 1.00      Initial public release.
+* 1.01      Minor edits for compiling under Arduino 1.0.
 *******************************************************************************/
-#include <NewSoftSerial.h>
+
+#include <SoftwareSerial.h>
 #include <TinyGPS.h>
 #include <EEPROM.h>
 #include "EEPROMAnything.h" // Required to save floats into EEPROM
 #include <math.h>
 
 TinyGPS gps;
-NewSoftSerial nss(4, 3);
+SoftwareSerial nss(4, 3);
 
 //--------------------------------------------------|
 //                    WAYPOINTS                     |
 //--------------------------------------------------|
 //Please enter the latitude and longitude of your   |
 //desired destinations:                              |
-  #define GEO_LAT1                40.709971
-  #define GEO_LON1               -74.007976
+  #define GEO_LAT1                40.7809
+  #define GEO_LON1               -77.998817
  
   #define GEO_LAT2                40.064287
   #define GEO_LON2               -105.210604
@@ -706,6 +708,7 @@ void allDistance() //turn on all distance LEDs
     digitalWrite(ledDistance[i], HIGH);
   }
 }
+
 
 
 
